@@ -22,9 +22,18 @@ namespace DemoTM1638
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        TM1638 m_t;
         public MainPage()
         {
             this.InitializeComponent();
+            setup();
+        }
+
+        private async void setup()
+        {
+            m_t = new TM1638(19, 13, 6);
+            await m_t.WaitForInitialiation();
+
         }
     }
 }
