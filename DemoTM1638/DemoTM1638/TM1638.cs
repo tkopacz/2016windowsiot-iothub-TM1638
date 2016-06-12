@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.Devices.Gpio;
 
+//Lighting API!
 namespace DemoTM1638
 {
     public class TM1638

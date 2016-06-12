@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Package Dependencies">
+      <UniqueIdentifier>f7710d5d-10b5-4463-bbfe-d90aadffbb03</UniqueIdentifier>
+      <Extensions>pfx;appxmanifest;config</Extensions>
+    </Filter>
+    <Filter Include="Package Dependencies\Assets">
+      <UniqueIdentifier>a9bc8c53-a72a-4465-9a28-dab53f846d0f</UniqueIdentifier>
+      <Extensions>png</Extensions>
+    </Filter>
+    <Filter Include="Package Dependencies\Include">
+      <UniqueIdentifier>73ed5aff-9e17-4144-a9d2-e234b9698847</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StartupTask.cpp">
+      <Filter>Package Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="DemoTM1638WiringApplication.ino" />
+    <ClCompile Include="InvertedTM1638.cpp" />
+    <ClCompile Include="TM16XX.cpp" />
+    <ClCompile Include="TM1638.cpp" />
+    <ClCompile Include="TM1640.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Package Dependencies\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="PinNumbers.h">
+      <Filter>Package Dependencies\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="InvertedTM1638.h" />
+    <ClInclude Include="TM16XX.h" />
+    <ClInclude Include="TM16XXFonts.h" />
+    <ClInclude Include="TM1638.h" />
+    <ClInclude Include="TM1640.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Package Dependencies\Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Package Dependencies\Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Package Dependencies\Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Package Dependencies\Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Package Dependencies\Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Package Dependencies\Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Package Dependencies\Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <Filter>Package Dependencies</Filter>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <Filter>Package Dependencies</Filter>
+    </None>
+    <None Include="DemoTM1638WiringApplication_TemporaryKey.pfx">
+      <Filter>Package Dependencies</Filter>
+    </None>
+  </ItemGroup>
+</Project>

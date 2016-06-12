@@ -12,9 +12,15 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Devices.Gpio;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
+/// <summary>
+//
+/// Lighting Api
+//
+/// <iot:Capability Name="lowLevelDevices" />
+/// <DeviceCapability Name = "109b86ad-f53d-4b76-aa5f-821e2ddf2141" />
+/// </summary>
 namespace DemoTM1638
 {
     /// <summary>
@@ -31,6 +37,11 @@ namespace DemoTM1638
 
         private async void setup()
         {
+            //if (LightningProvider.IsLightningEnabled)
+            //{
+            //    LowLevelDevicesController.DefaultProvider = LightningProvider.GetAggregateProvider();
+            //}
+
             m_t = new TM1638(19, 13, 6);
             await m_t.WaitForInitialiation();
 
